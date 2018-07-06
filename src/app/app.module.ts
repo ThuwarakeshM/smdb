@@ -10,6 +10,9 @@ import {CardModule} from 'primeng/card';
 import {InputTextModule} from 'primeng/inputtext';
 import {PasswordModule} from 'primeng/password';
 import {ButtonModule} from 'primeng/button';
+import {ToolbarModule} from 'primeng/toolbar';
+
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -18,7 +21,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +34,7 @@ const appRoutes: Routes = [
     InputTextModule,
     PasswordModule,
     ButtonModule,
+    ToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
