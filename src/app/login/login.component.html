@@ -1,3 +1,12 @@
-<p>
-  login works!
-</p>
+<p-card title="Login" [style]="{width: '360px'}">
+        <form>
+            
+            <input type="text" required pInputText [(ngModel)]="username" name="username">
+            <br/>
+            <input type="password" pPassword [(ngModel)]="password" name="password">
+            <br/>
+    
+            <button type="submit" pButton style="margin-right: .25em" label="Submit" (click)="login()"></button>
+    
+        </form>
+</p-card>
