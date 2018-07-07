@@ -10,6 +10,9 @@ import {CardModule} from 'primeng/card';
 import {InputTextModule} from 'primeng/inputtext';
 import {PasswordModule} from 'primeng/password';
 import {ButtonModule} from 'primeng/button';
+import {ToolbarModule} from 'primeng/toolbar';
+
+import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
@@ -22,6 +25,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
+    NavbarComponent,
     HomeComponent
   ],
   imports: [
@@ -34,6 +38,7 @@ const appRoutes: Routes = [
     InputTextModule,
     PasswordModule,
     ButtonModule,
+    ToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
