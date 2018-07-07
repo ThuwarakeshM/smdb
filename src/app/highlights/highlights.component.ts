@@ -11,22 +11,22 @@ export class HighlightsComponent implements OnInit {
 
   constructor() {
     this.data = {
-      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      labels: ['2012', '2015', '2016', '2017', '2018'],
       datasets: [
         {
-          label: 'My First dataset',
+          label: 'PFChang Yelp Ratings',
           backgroundColor: '#42A5F5',
           borderColor: '#1E88E5',
-          data: [65, 59, 80, 81, 56, 55, 40]
+          data: [4.0, 4.3, 4.2, 4.4, 4.5]
         },
         {
-          label: 'My Second dataset',
+          label: 'PFChang Google Ratings',
           backgroundColor: '#9CCC65',
           borderColor: '#7CB342',
-          data: [28, 48, 40, 19, 86, 27, 90]
+          data: [3.7, 3.8, 3.9, 3.8, 4.0]
         }
       ]
-    }
+    };
   }
 
   ngOnInit() {
