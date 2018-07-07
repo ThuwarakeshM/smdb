@@ -11,6 +11,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { ButtonModule } from 'primeng/button';
 import { ToolbarModule } from 'primeng/toolbar';
+import { ChartModule } from "primeng/chart";
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
@@ -37,7 +38,7 @@ const appRoutes: Routes = [
     HighlightsComponent,
     ThemesComponent,
     ForecastsComponent,
-    CompetitionComponent
+    CompetitionComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +51,7 @@ const appRoutes: Routes = [
     PasswordModule,
     ButtonModule,
     ToolbarModule,
+    ChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
