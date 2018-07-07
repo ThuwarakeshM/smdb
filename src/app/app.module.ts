@@ -14,6 +14,9 @@ import {ToolbarModule} from 'primeng/toolbar';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { HighlightsComponent } from './highlights/highlights.component';
+import { ThemesComponent } from './themes/themes.component';
+import { ForecastsComponent } from './forecasts/forecasts.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -26,7 +29,10 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    HighlightsComponent,
+    ThemesComponent,
+    ForecastsComponent
   ],
   imports: [
     BrowserModule,
