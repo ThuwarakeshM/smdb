@@ -1,7 +1,32 @@
 <p-card title="Ratings" subtitle="Average Rating Trend Of Your Business" styleClass="ui-card-shadow">
-    <p-chart type="bar" [data]="data"></p-chart>
+    <div class="ui-g">
+        <div class="ui-g-8">
+            <p-chart type="bar" [data]="rating_data"></p-chart>
+        </div>
+        <div class="ui-g-4">
+            <p-card>
+                <strong>3.8</strong>
+                <br/> by
+                <strong>1033</strong> Google Users
+            </p-card>
+            <br/>
+            <p-card>
+                <strong>4.1</strong>
+                <br/> by
+                <strong>1033</strong> Yelp Users
+            </p-card>
+
+        </div>
+    </div>
 </p-card>
 <br/>
 <p-card title="Ratings Distribution" subtitle="Average Rating Distribution Of Your Business" styleClass="ui-card-shadow">
-
+    <div class="ui-g">
+        <div class="ui-g-8">
+            <p-chart type="line" [data]="rating_dist_data"></p-chart>
+        </div>
+        <div class="ui-g-4">
+            <p-chart type="bar" [data]="rating_dist_summary" height="50vh" [options]="rating_dist_summary_opt"></p-chart>
+        </div>
+    </div>
 </p-card>
