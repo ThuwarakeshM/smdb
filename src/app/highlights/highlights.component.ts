@@ -12,6 +12,7 @@ export class HighlightsComponent implements OnInit {
   rating_dist_summary: any;
 
   rating_dist_summary_opt: any;
+  rating_opt: any;
 
   constructor() {
     this.rating_dist_summary = {
@@ -23,6 +24,16 @@ export class HighlightsComponent implements OnInit {
           data: [65, 59, 80, 70, 56]
         },
       ]
+    };
+
+    this.rating_opt = {
+      scales: {
+        yAxes: [{
+          ticks: {
+            min: 0
+          }
+        }]
+      }
     };
 
     this.rating_dist_summary_opt = {
