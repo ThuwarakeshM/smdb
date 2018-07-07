@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { ThemesComponent } from './themes/themes.component';
 import { ForecastsComponent } from './forecasts/forecasts.component';
+import { CompetitionComponent } from './competition/competition.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
   { path: 'Highlights', component: HighlightsComponent },
   { path: 'Themes', component: ThemesComponent },
   { path: 'Forecasts', component: ForecastsComponent },
+  { path: 'Competition', component: CompetitionComponent },
 ];
 
 @NgModule({
@@ -34,7 +36,8 @@ const appRoutes: Routes = [
     HomeComponent,
     HighlightsComponent,
     ThemesComponent,
-    ForecastsComponent
+    ForecastsComponent,
+    CompetitionComponent
   ],
   imports: [
     BrowserModule,
