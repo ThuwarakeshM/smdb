@@ -12,6 +12,7 @@ export class NavbarComponent implements OnInit {
     'Highlights',
     'Themes',
     'Forecasts',
+    'Competition',
   ];
 
   constructor(public router: Router) { }
@@ -19,9 +20,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  navigate(e) {
-    console.log(e);
-    this.router.navigateByUrl('/' + e);
+  navigate(e: string) {
+    this.router.navigateByUrl('/' + e.toLowerCase());
   }
 
 }

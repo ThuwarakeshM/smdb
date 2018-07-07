@@ -22,10 +22,10 @@ import { CompetitionComponent } from './competition/competition.component';
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'Highlights', component: HighlightsComponent },
-  { path: 'Themes', component: ThemesComponent },
-  { path: 'Forecasts', component: ForecastsComponent },
-  { path: 'Competition', component: CompetitionComponent },
+  { path: 'highlights', component: HighlightsComponent },
+  { path: 'themes', component: ThemesComponent },
+  { path: 'forecasts', component: ForecastsComponent },
+  { path: 'competition', component: CompetitionComponent },
 ];
 
 @NgModule({
